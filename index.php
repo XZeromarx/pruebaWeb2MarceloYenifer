@@ -10,9 +10,26 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="model/bulma-0.7.1/css/bulma.min.css">
-        <title></title>
+        <title>Preguntas</title>
     </head>
     <body>
-        
+         <tr>  
+                <td><input type="text" name="pregunta1" placeholder="opcion1: " required ></td>
+                
+            </tr>
+             <tr>
+             
+                <td><input type="text" name="pregunta2" placeholder="opcion2: " required ></td>
+            </tr>
+           <br>
+            <tr>
+                <td><a class="button is-success is-outlined">Crear Pregunta</a></td>
+    
+            </tr>
+             <tr>
+                 <br>
+             <td><a class="button is-outlined">Probar Encuesta</a></td>
+               </tr>  
+
     </body>
 </html>
