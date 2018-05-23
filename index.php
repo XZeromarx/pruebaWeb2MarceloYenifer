@@ -13,23 +13,26 @@ and open the template in the editor.
         <title>Preguntas</title>
     </head>
     <body>
-         <tr>  
+        <table>
+            <tr>  
                 <td><input type="text" name="pregunta1" placeholder="opcion1: " required ></td>
-                
+
             </tr>
-             <tr>
-             
+            <tr>
+
                 <td><input type="text" name="pregunta2" placeholder="opcion2: " required ></td>
             </tr>
-           <br>
+            <br>
             <tr>
                 <td><a class="button is-success is-outlined">Crear Pregunta</a></td>
-    
-            </tr>
-             <tr>
-                 <br>
-             <td><a class="button is-outlined">Probar Encuesta</a></td>
-               </tr>  
 
-    </body>
+            </tr>
+            <tr>
+            <br>
+            <td><a class="button is-outlined">Probar Encuesta</a></td>
+        </tr>
+    </table>
+
+
+</body>
 </html>
