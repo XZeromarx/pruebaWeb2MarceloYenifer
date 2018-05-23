@@ -13,26 +13,35 @@ and open the template in the editor.
         <title>Preguntas</title>
     </head>
     <body>
-        <table>
-            <tr>  
-                <td><input type="text" name="pregunta1" placeholder="opcion1: " required ></td>
 
-            </tr>
-            <tr>
-
-                <td><input type="text" name="pregunta2" placeholder="opcion2: " required ></td>
-            </tr>
-            <br>
-            <tr>
-                <td><a class="button is-success is-outlined">Crear Pregunta</a></td>
-
-            </tr>
-            <tr>
-            <br>
-            <td><a class="button is-outlined">Probar Encuesta</a></td>
-        </tr>
-    </table>
+        <div class="box is-centered">
 
 
-</body>
+            <form action="controller/crearPregunta.php" method="POST">
+
+                <div class="columns">
+                    <div class="column"></div>
+
+                    <div class="column">
+                        <input class="input is-centered is-outlined is-primary is-rounded" type="text" name="pregunta1" placeholder="opcion 1:" style="height: 20" required >
+                        <br><br>
+                        <input class="input is-centered is-outlined is-primary is-rounded" type="text" name="pregunta2" placeholder="opcion 2: " required >
+                        <br><br>
+                        <input class="button is-success is-outlined" type="submit" value="Crear Pregunta">
+                        <br><br>
+                        <a class="button is-outlined" href="view/encuesta.php">Probar Encuesta</a>
+                    </div>
+
+                    <div class="column"></div>
+
+                </div>
+
+
+
+            </form>
+
+        </div>
+
+
+    </body>
 </html>
