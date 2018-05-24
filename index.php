@@ -23,9 +23,9 @@ and open the template in the editor.
                     <div class="column"></div>
 
                     <div class="column">
-                        <input class="input is-centered is-outlined is-primary is-rounded" type="text" name="pregunta1" placeholder="opcion 1:" style="height: 20" required >
+                        <input class="input is-centered is-outlined is-primary is-rounded" type="text" name="pregunta1" id="pregunta1" placeholder="opcion 1:" style="height: 20" required >
                         <br><br>
-                        <input class="input is-centered is-outlined is-primary is-rounded" type="text" name="pregunta2" placeholder="opcion 2: " required >
+                        <input class="input is-centered is-outlined is-primary is-rounded" type="text" name="pregunta2" id="pregunta2" placeholder="opcion 2: " required >
                         <br><br>
                         <input class="button is-success is-outlined" type="submit" value="Crear Pregunta">
                         <br><br>
