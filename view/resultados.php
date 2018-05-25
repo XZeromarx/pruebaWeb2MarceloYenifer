@@ -14,7 +14,9 @@
 
                 <div class="column">
                     <table class=" table is-bordered is-striped is-narrow is-hoverable is-fullwidth is-centered">
-                        <h1><b>RESPUESTAS</b></h1>
+                        <h1><b>RESULTADOS</b></h1>
+                        <imput><a class="button is-outlined" href="../index.php">volver</a></imput>
+                          <imput><a class="button is-outlined" href="encuesta.php">volver a encuestas</a></imput>
                         <br></br>
 
                         <h1>PREGUNTA 1</h1>
