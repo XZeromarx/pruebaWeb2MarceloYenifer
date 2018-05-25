@@ -29,7 +29,7 @@ and open the template in the editor.
                         <br><br>
                         <input class="button is-success is-outlined" type="submit" value="Crear Pregunta">
                         <br><br>
-                        <a class="button is-outlined" href="view/encuesta.php">Probar Encuesta</a>
+                        <a class="button is-outlined" href="view/respuestas.php">Probar Encuesta</a>
                     </div>
 
                     <div class="column"></div>
