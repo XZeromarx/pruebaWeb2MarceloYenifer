@@ -1,4 +1,13 @@
 
+<?php
+require_once ("../model/Data.php");
+$d = new Data();
+
+$opciones = $d->mostrarOpciones();
+
+?>
+
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -8,29 +17,44 @@
         <title>Resultados</title>
     </head>
     <body>
-        
-          <div class="box is-centered">
-               <div class="columns">
-                <div class="column"></div>
 
-                <div class="column">
-                    <h1><b>Encuestas</b></h1>
-                    <imput><a class="button is-outlined" href="resultados.php">ver resultados</a></imput>
-                       <imput><a class="button is-outlined" href="../index.php">volver</a></imput>
-                      
-                    <br></br>
-                    <h1>PREGUNTA 1</h1>
-                    <a class="button is-info is-outlined">boton1</a>
-                   <a class="button is-info is-outlined">boton1</a>
-                   <br></br>
-                   <h1>PREGUNTA 2</h1>
-                    <a class="button is-info is-outlined">boton2</a>
-                   <a class="button is-info is-outlined">boton2</a>
-                    <br></br>
-                     <h1>PREGUNTA 3</h1>
-                    <a class="button is-info is-outlined">boton3</a>
-                   <a class="button is-info is-outlined">boton3</a>
-          <div class="column"></div>
- 
+
+        <div class="columns">
+            <div class="column"></div>
+
+            <div class="column">
+                <h1 class="title"><b>Encuestas</b></h1>
+                <a class="button is-outlined is-centered" href="resultados.php">ver resultados</a>
+                <a class="button is-outlined is-centered" href="../index.php">volver</a>
+
+                <br><br>
+                <?php
+                $cont = 0;
+                 while ($item = $opciones->fetch_assoc()) { 
+                     $cont++;
+                     ?>
+                    
+                    <h1 class="subtitle">PREGUNTA <?php echo $cont; ?></h1>
+                    <div class="box">
+
+                        <div class="columns">
+                            <div class="column">
+                                <a class="button is-info is-outlined is-centered" style="width: 260"><?php echo $item['Opcion1']; ?></a>
+                            </div>
+                            <div class="column">
+                                <a class="button is-info is-outlined is-centered" style="width: 260"><?php echo $item['Opcion2']; ?></a>
+                            </div>
+                        </div>
+
+                    <?php } ?>
+
+
+                </div>
+
+            </div>
+
+            <div class="column"></div>
+        </div>
+
     </body>
 </html>
