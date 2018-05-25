@@ -1,10 +1,14 @@
 <?php
 
-require_once "../model/Data.php";
-$d = new $Data();
+require_once("../model/Data.php");
+$d = new Data();
 
 
-$op1 = $_REQUEST["pregunta1"];
-$op2 = $_REQUEST["pregunta2"];
+$primeraOpcion = $_REQUEST["pregunta1"];
+$segundaOpcion = $_REQUEST["pregunta2"];
 
-$d->ejecutarQuery("");
+$query = "CALL registrarPregunta('$primeraOpcion','$segundaOpcion');";
+
+$d->ejecutarQuery($query);
+
+header("location: ../index.php");
