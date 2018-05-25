@@ -7,7 +7,7 @@ class Data {
     private $con;
 
     public function __construct() {
-        $this->con = new Conexion("bd_web");
+        $this->con = new Conexion("id5908109_db_encuesta");
     }
 
     public function ejecutarQuery($query) {
