@@ -15,8 +15,9 @@
                 <div class="column">
                     <table class=" table is-bordered is-striped is-narrow is-hoverable is-fullwidth is-centered">
                         <h1><b>RESULTADOS</b></h1>
-                        <imput><a class="button is-outlined" href="../index.php">volver</a></imput>
-                          <imput><a class="button is-outlined" href="encuesta.php">volver a encuestas</a></imput>
+                      <a class="button  is-info is-outlined" href="../index.php">Inicio</a>
+                          <a class="button  is-info is-outlined" href="encuesta.php">Encuestas</a>
+                          <a class="button  is-info is-outlined" href="estadisticas.php"> Estadisticas</a>
                         <br></br>
 
                         <h1>PREGUNTA 1</h1>
@@ -93,7 +94,7 @@
 
             </div>
 
-
+ </div>
 
 
     </body>

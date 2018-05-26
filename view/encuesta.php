@@ -24,8 +24,8 @@ $opciones = $d->mostrarOpciones();
 
             <div class="column">
                 <h1 class="title"><b>Encuestas</b></h1>
-                <a class="button is-outlined is-centered" href="resultados.php">ver resultados</a>
-                <a class="button is-outlined is-centered" href="../index.php">volver</a>
+                <a class="button is-outlined is-centered" href="resultados.php">Ver resultados</a>
+                <a class="button is-outlined is-centered" href="../index.php">Inicio</a>
 
                 <br><br>
                 <?php

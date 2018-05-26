@@ -16,9 +16,6 @@ and open the template in the editor.
 
         <div class="box is-centered">
 
-
-
-
             <div class="columns">
                 <div class="column"></div>
                 
@@ -28,7 +25,7 @@ and open the template in the editor.
                         <br><br>
                         <input class="input is-centered is-outlined is-primary is-rounded" type="text" name="pregunta2" id="pregunta2" placeholder="opcion 2:" required >
                         <br><br>
-                        <input class="button is-success is-outlined" type="submit" value="Crear Pregunta">
+                        <input class="button is-success is-outlined " type="submit" value="Crear Pregunta">
                         <br><br>
                         <a class="button is-outlined" href="view/encuesta.php">Probar Encuesta</a>
                     </div>
